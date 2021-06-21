@@ -3,7 +3,9 @@
 3-) run command: docker exec -it cassandra bash <br />
 4-) run command: cqlsh <br />
 
+
 ![image](https://user-images.githubusercontent.com/16955249/122736899-27803c00-d289-11eb-8377-35bd9503de67.png)
+
 
 5-) after that copy the script below and run it inside cqlsh
 
