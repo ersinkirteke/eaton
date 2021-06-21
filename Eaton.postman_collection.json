@@ -1,0 +1,21 @@
+{
+	"info": {
+		"_postman_id": "20f5d43c-5e6d-469c-b6eb-055a500c88c3",
+		"name": "Eaton",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Producer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Post Request for producer method which send telemetry data to kafka"
+			},
+			"response": []
+		}
+	]
+}
