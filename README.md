@@ -23,3 +23,22 @@ TimeStamp timestamp,
 Latitude double,
 Longitude double,
 PRIMARY KEY (Id))
+
+7-) run kafka.eaton.producer.api to send a message to the kafka firstly. send a post request with a producer method with sample json data below
+
+sample json data: {
+  "deviceName": "eatonups45",
+  "temperature": 45,
+  "timeStamp": "2021-06-20T18:48:22.641Z",
+  "latitude": 38.41273,
+  "longitude": 27.13838
+}
+
+![image](https://user-images.githubusercontent.com/16955249/122738249-7e3a4580-d28a-11eb-8ff3-ebe6a54899b8.png)
+
+8-) run kafka.eaton.consumer.api to consume messages from kafka, it persist data to cassandra.
+
+9-) You can run test project in both two project (kafka.eaton.producer.api, kafka.eaton.consumer.api)
+
+10-) You can find a system design documents for predictpulse inside repository
+
