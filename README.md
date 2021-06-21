@@ -1,5 +1,8 @@
 1-) run cmd <br />
 2-) run command : docker-compose --project-name eaton up -d <br />
+
+![image](https://user-images.githubusercontent.com/16955249/122747229-7cc14b00-d293-11eb-8d47-0cbf7e425c96.png)
+
 3-) run command: docker exec -it cassandra bash <br />
 4-) run command: cqlsh <br />
 
