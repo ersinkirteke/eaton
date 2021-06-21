@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "kafka.eaton.consumer.api", "kafka.eaton.consumer.api.csproj", "{B26B32E1-76A2-46F4-8B2F-02F2B48B69B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "kafka.eaton.common.domain", "..\kafka.eaton.common.domain\kafka.eaton.common.domain.csproj", "{C4201A43-A312-46EA-9FAB-B356FC024627}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "kafka.eaton.consumer.test", "..\kafka.eaton.consumer.test\kafka.eaton.consumer.test.csproj", "{215CCF9C-F8F2-4C6A-867B-B3E606F7CF81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kafka.eaton.common.infrastructure", "..\kafka.eaton.common.infrastructure\kafka.eaton.common.infrastructure.csproj", "{B84D85C5-5A0F-4B39-A0BB-AD4AAF6C5DDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B26B32E1-76A2-46F4-8B2F-02F2B48B69B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B26B32E1-76A2-46F4-8B2F-02F2B48B69B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B26B32E1-76A2-46F4-8B2F-02F2B48B69B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B26B32E1-76A2-46F4-8B2F-02F2B48B69B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4201A43-A312-46EA-9FAB-B356FC024627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4201A43-A312-46EA-9FAB-B356FC024627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4201A43-A312-46EA-9FAB-B356FC024627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4201A43-A312-46EA-9FAB-B356FC024627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{215CCF9C-F8F2-4C6A-867B-B3E606F7CF81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{215CCF9C-F8F2-4C6A-867B-B3E606F7CF81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{215CCF9C-F8F2-4C6A-867B-B3E606F7CF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{215CCF9C-F8F2-4C6A-867B-B3E606F7CF81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B84D85C5-5A0F-4B39-A0BB-AD4AAF6C5DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B84D85C5-5A0F-4B39-A0BB-AD4AAF6C5DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B84D85C5-5A0F-4B39-A0BB-AD4AAF6C5DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B84D85C5-5A0F-4B39-A0BB-AD4AAF6C5DDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79AE9AA0-76D1-45A3-A58A-191C2A352CCB}
+	EndGlobalSection
+EndGlobal
