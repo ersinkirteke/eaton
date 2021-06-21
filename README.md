@@ -40,5 +40,5 @@ sample json data: {
 
 9-) You can run test project in both two project (kafka.eaton.producer.api, kafka.eaton.consumer.api)
 
-10-) You can find a system design documents for predictpulse inside repository
+10-) You can find a system design documents such as Designing PredictPulse Backend.docx for predictpulse inside repository
 
