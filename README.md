@@ -36,6 +36,8 @@ sample json data: {
 
 ![image](https://user-images.githubusercontent.com/16955249/122738249-7e3a4580-d28a-11eb-8ff3-ebe6a54899b8.png)
 
+or you can use a postman collection such as Eaton.postman_collection.json inside repository
+
 8-) run kafka.eaton.consumer.api to consume messages from kafka, it persist data to cassandra.
 
 9-) You can run test project in both two project (kafka.eaton.producer.api, kafka.eaton.consumer.api)
