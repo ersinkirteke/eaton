@@ -44,3 +44,9 @@ or you can use a postman collection such as Eaton.postman_collection.json inside
 
 10-) You can find a system design documents such as Designing PredictPulse Backend.docx for predictpulse inside repository
 
+11-) You can use dbeaver to look at persisted data which coming from kafka streming
+
+![image](https://user-images.githubusercontent.com/16955249/122741213-687a4f80-d28d-11eb-9490-963c5798e39c.png)
+
+
+
