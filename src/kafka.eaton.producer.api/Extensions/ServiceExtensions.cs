@@ -12,6 +12,14 @@ namespace kafka.eaton.producer.api.extensions
                     builder => builder.AllowAnyOrigin()
                     .AllowAnyMethod()
                     .AllowAnyHeader());
+
+                // I can specify the domains like that for cors
+                /*options.AddPolicy(name: MyAllowSpecificOrigins,
+                              builder =>
+                              {
+                                  builder.WithOrigins("http://example.com",
+                                                      "http://www.contoso.com");
+                              });*/
             });
         }
     }

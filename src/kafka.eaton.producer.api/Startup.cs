@@ -63,6 +63,8 @@ namespace kafka.eaton.producer.api
             {
                 endpoints.MapControllers();
             });
+
+            app.ConfigureCustomExceptionMiddleware();
         }
     }
 }
