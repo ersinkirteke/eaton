@@ -42,7 +42,7 @@ namespace kafka.eaton.consumer.api
             ;
 
             //extension method for addtransient with options
-            services.AddTelemetryAccessData(options =>
+            services.AddAccessData(options =>
             {
                 options.KeySpace = Configuration.GetValue<string>("keyspace");
             });

@@ -11,15 +11,13 @@ namespace kafka.eaton.producer.api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ProducerController : ControllerBase
+    public class ProducerController : BaseController<ProducerController>
     {
         private readonly ProducerConfig _producerConfig;
-        private readonly IConfiguration _configuration;
 
-        public ProducerController(ProducerConfig producerConfig, IConfiguration configuration)
+        public ProducerController(ProducerConfig producerConfig)
         {
             _producerConfig = producerConfig;
-            _configuration = configuration;
         }
 
         /// <summary>
@@ -43,7 +41,7 @@ namespace kafka.eaton.producer.api.Controllers
             Console.WriteLine(serializedOrder);
             Console.WriteLine("=========");
 
-            var producer = new ProducerWrapper(this._producerConfig, _configuration.GetValue<string>("topic"));
+            var producer = new ProducerWrapper(this._producerConfig, Settings.Topic);
             await producer.WriteMessage(serializedOrder);
 
             return Created("Producer", "Device telemetry is in progress");

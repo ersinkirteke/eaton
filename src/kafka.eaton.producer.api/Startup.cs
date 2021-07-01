@@ -1,4 +1,10 @@
 using Confluent.Kafka;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using kafka.eaton.common.domain.models;
+using kafka.eaton.producer.api.extensions;
+using kafka.eaton.producer.api.settings;
+using kafka.eaton.producer.api.validators;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -20,7 +26,8 @@ namespace kafka.eaton.producer.api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddMvc().AddFluentValidation();
+            services.AddTransient<IValidator<TelemetryDto>, TelemetryValidator>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -30,6 +37,10 @@ namespace kafka.eaton.producer.api
             var producerConfig = new ProducerConfig();
             Configuration.Bind("producer", producerConfig);
             services.AddSingleton<ProducerConfig>(producerConfig);
+
+            services.Configure<ProducerSettings>(options => Configuration.GetSection("kafkasettings").Bind(options));
+
+            services.ConfigureCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

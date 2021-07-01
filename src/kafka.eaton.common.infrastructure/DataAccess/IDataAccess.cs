@@ -3,8 +3,8 @@ using System.Threading.Tasks;
 
 namespace kafka.eaton.common.infrastructure.dataaccess
 {
-    public interface ITelemetryDataAccess
+    public interface IDataAccess<T> where T : IEntity
     {
-        Task InsertTelemetry(Telemetry telemetry);
+        Task Insert(T entity);
     }
 }

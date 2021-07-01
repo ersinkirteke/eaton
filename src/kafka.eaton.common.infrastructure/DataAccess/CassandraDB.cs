@@ -1,19 +1,23 @@
 ﻿using Cassandra;
+using System;
 
 namespace kafka.eaton.common.infrastructure.dataaccess
 {
-    /// <summary>
-    /// Cassandra Data Access Layer
-    /// </summary>
-    public class CassandraDataAccess : ICassandraDataAccess
+    public class CassandraDB : ICassandraDB
     {
+        public string GetConnection()
+        {
+            throw new NotImplementedException();
+        }
+
         private static Cluster Cluster;
         private static ISession Session;
 
-        public CassandraDataAccess()
+        public CassandraDB()
         {
             SetCluster();
         }
+
         private void SetCluster()
         {
             if (Cluster == null)

@@ -59,7 +59,7 @@ namespace kafka.eaton.consumer.api.services
                     DateTime time = DateTime.Now;
                     long unixTime = ((DateTimeOffset)time).ToUnixTimeSeconds();
                     telemetry.Id=telemetry.DeviceName+" "+ unixTime;
-                    await _telemetryDataAccess.InsertTelemetry(telemetry);
+                    await _telemetryDataAccess.Insert(telemetry);
                     Console.WriteLine($"Info: TelemetryHandler => Processing the telemetry for {telemetry.DeviceName}");
 
                     //Write to TelemetryProcessed Queue

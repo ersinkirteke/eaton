@@ -21,7 +21,7 @@ namespace kafka.eaton.consumer.test
         private ConsumerConfig _consumerConfig;
         private ProducerConfig _producerConfig;
         private static IMapper _mapper;
-        private IOptions<TelemetryDataAccessOptions> _options;
+        private IOptions<DataAccessOptions> _options;
 
         public ProcessTelemetryServiceTest()
         {
@@ -33,7 +33,7 @@ namespace kafka.eaton.consumer.test
             _configuration = configuration;
             _consumerConfig = configuration.GetSection("consumer").Get<ConsumerConfig>();
             _producerConfig = configuration.GetSection("producer").Get<ProducerConfig>();
-            _options = Options.Create(configuration.Get<TelemetryDataAccessOptions>());
+            _options = Options.Create(configuration.Get<DataAccessOptions>());
 
             if (_mapper == null)
             {

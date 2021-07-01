@@ -1,16 +1,12 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace kafka.eaton.common.infrastructure.dataaccess
 {
-    public static class TelemetryDataAccessCollectionExtensions
+    public static class DataAccessCollectionExtensions
     {
-        public static IServiceCollection AddTelemetryAccessData(this IServiceCollection collection,
-            Action<TelemetryDataAccessOptions> setupAction)
+        public static IServiceCollection AddAccessData(this IServiceCollection collection,
+            Action<DataAccessOptions> setupAction)
         {
             if (collection == null) throw new ArgumentNullException(nameof(collection));
             if (setupAction == null) throw new ArgumentNullException(nameof(setupAction));
