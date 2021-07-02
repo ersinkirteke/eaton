@@ -8,7 +8,7 @@ namespace kafka.eaton.producer.api.Controllers
     {
         private IProducerSettings _settings;
 
-        protected IProducerSettings Settings => _settings ?? HttpContext?.RequestServices.GetService<IProducerSettings>();
+        protected IProducerSettings Settings => _settings ?? (_settings = HttpContext?.RequestServices.GetService<IProducerSettings>());
 
     }
 }
